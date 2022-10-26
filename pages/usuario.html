@@ -1,37 +1,47 @@
-<!DOCTYPE html>
+</ul><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usuario</title>
+    <title>BearStore</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body class="body">
     <header class="header">
         <nav class="navBar">
-            <ul class="lista">
-                <li><a href="./categorias.html">Categorias</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./usuario.html">Usuario</a></li>
-                <li><a href="./carrito.html">Carrito</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="mainNosotros">
-        <div class="cuadrado">
-            <h1 class="usuario"> Ingresar
-                <p>Usuario: <input type="text" name="usuario" maxlength="none"></p>
-                <p>Contraseña: <input type="password" name="password" minlength="8"></p>
-                <input type="submit" value="Enviar">
-            </h1>
-        </div>
+                <ul class="lista">
+                    <li><a href="./categorias.html">CATEGORIAS</a></li>
+                    <li><a href="./nosotros.html">NOSOTROS</a></li>
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="./usuario.html">USUARIO</a></li>
+                    <li><a href="./carrito.html">CARRITO</a></li>
+                </ul>
+            </nav>
+        </header>
+    <main class="mainUsuario">
+        <div class="rectangle">
+        <div class="titleForm">
+            <div>Ya soy cliente</div>
+            <div>
+                <a href="#">Ingresar con Facebook</a>
+                <br>
+                <a href="#">Ingresar con Google</a>
+            </div>
+            <form class="formulario">ingresá usando tu email y contraseña
+                <input id="email" type="text" name="email" placeholder="Email">
+                <input id="password" type="password" name="password" placeholder="Contraseña">
+                <input type="submit" name="ingresar" value="Ingresar">
+            </form>
+            <div>
+                <a href="#">Registrate</a>
+            </div>
+        </form>
+        <a href="#">¿Olvidaste tu contraseña?</a><span>¿Aún no estas registrado?</span><a href="#">Registrarse</a>
+    </div>
     </main>
     <footer class="footer">
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde natus quibusdam, quam ipsa sunt, fuga temporibus blanditiis tenetur, eius fugiat numquam incidunt ea. Dolorem alias sapiente, porro quisquam voluptate rerum.</p>
-        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde natus quibusdam, quam ipsa sunt, fuga temporibus blanditiis tenetur, eius fugiat numquam incidunt ea. Dolorem alias sapiente, porro quisquam voluptate rerum.</p>
     </footer>
 </body>
 </html>
