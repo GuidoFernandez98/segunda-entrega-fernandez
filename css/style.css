@@ -7,12 +7,35 @@
 .body{
     height: 100vh;
     width: 100%;
-    background-color: #586f7e;
-    background-image: linear-gradient(162deg, #586f7e 28%, #2d3076 73%);
-    
-
+    background: linear-gradient(113deg,#f2ecde,#000000,#fffffe);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "main main main main"
+    "footer footer footer footer";
 }
 
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.header {
+    display: grid;
+    grid-area: "header";
+
+}
 
 .lista {
     height: 10vh;
@@ -32,16 +55,66 @@
     font-weight: bold;
 }
 
+.logo {
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/BearstoreLogo.jpg);
+    border-radius: 50%;
+    border: solid black 2px;
+}
+
+.botonNav {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+    color: #000000;
+    background-color: #F2ECDE;
+    padding: 1px 30px;
+    border: solid #000000 2px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 50px;
+    transition : 169ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.botonNav:hover{
+    transition : 169ms;
+    padding: 10px 50px;
+    transform : translateY(-0px);
+    background-color: #d9d9d9;
+    border: solid 2px black;
+}
+
 .main{
     height: 80vh;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
     justify-content:space-around;
     font-family: monospace;
     font-size: xx-large;
     font-weight: bold;
+    display: grid;
+    grid-area: "main";
+}
+
+.rectangulo{
+    width: 500px;
+    height: 100px;
+    background: #d9d9d9;
+    box-shadow: 1px 13px 32px 9px rgba(0,0,0,0.47);
+    background-image: url(../img/fabric.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d9d9d9;
 }
 
 .footer{
@@ -74,9 +147,9 @@ p {
 .rectangle {
     height: 70vh;
     width: 75%;
-    opacity: 0.5;
     background-color: #d9d9d9;
     border-radius: 25px 25px 25px 25px;
+    box-shadow: -1px 5px 13px 1px rgba(0,0,0,0.43);
 }
 
 .titleForm{
@@ -101,11 +174,40 @@ p {
     align-items: center;
 }
 
+.btnRegistro{
+    font-family: Roboto, sans-serif;
+    font-weight: 186;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #d9d9d9;
+    padding: 7px 30px;
+    border: solid #000000 2px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 50px;
+    transition : 169ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btnRegistro:hover{
+    transition : 169ms;
+    padding: 10px 50px;
+    transform : translateY(-0px);
+    background-color: #d9d9d9;
+    color: #0066cc;
+    border: solid 2px #0066cc;
+}
+
 .cuadrado {
-    height: 70vh;
-    width: 75%;
+    height: 500px;
+    width: 850px;
     border-radius: 25px 25px 25px 25px;
-    background-color: #2d3076;
+    background-color: #d9d9d9;
+    box-shadow: -1px 5px 13px 1px rgba(0,0,0,0.43);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -113,50 +215,40 @@ p {
 }
 
 .boton {
-	box-shadow: 0px 0px 19px -1px #1e9ab3;
-	background-color:#0a0a0a;
-	border-radius:39px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:sans-serif;
-	font-size:20px;
-	padding:6px 71px;
-	text-decoration:none;
+    font-family: Roboto, sans-serif;
+    font-weight: 186;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #d9d9d9;
+    padding: 7px 30px;
+    border: solid #000000 2px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 7px 8px 8px;
+    transition : 169ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
 }
 .boton:hover {
-	background-color:#797a78;
+	transition : 169ms;
+    padding: 10px 20px;
+    transform : translateY(-0px);
+    background-color:blueviolet;
+    border: solid 2px #000000;
 }
 
 .boton a{
-    color: rgba(221, 221, 221, 0.664);
+    color: #000000;
     text-decoration: none;
 }
 
-.body{
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4,1fr);
-    grid-template-areas: 
-    "header header header header"
-    "main main main main"
-    "main main main main"
-    "footer footer footer footer";
-
-}
-
-.header {
-    display: grid;
-    grid-area: header;
-}
-
-.main {
-    display: grid;
-    grid-area: main;
-}
-
-.footer {
-    display: grid;
-    grid-area: footer;
+.textoNos {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {
@@ -206,20 +298,25 @@ p {
 
 @media (max-width:576px){
     .body{
+        display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(3, autofit);
         grid-template-areas: 
         "header"
         "main"
         "footer";
-        background-color: none;
+        background: linear-gradient(40deg,#68faef,#f2ecde,#000000);
+        background-size: 180% 180%;
+        animation: gradient-animation 24s ease infinite;
     }
     .header {
+        display: grid;
         grid-area: "header";
         background-color: #d9d9d9;
     }
     .main{
-        grid-area: "main";
+        display: grid;
+        grid-area: main;
         background-color: #797a78;
     }
     .mainUsuario{
@@ -229,7 +326,7 @@ p {
     .cuadrado{
         background-color: #d9d9d9;
     }
-    .rectangle{
+    .rectangulo{
         background-color: black;
         color: #d9d9d9;
         opacity: none;
@@ -242,7 +339,9 @@ p {
         color: blue;
     }
     .footer{
+        display: grid;
         grid-area: "footer";
         background-color: #d9d9d9;
     }
 }
+
