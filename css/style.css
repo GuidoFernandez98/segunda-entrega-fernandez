@@ -251,6 +251,23 @@ p {
     font-weight: bold;
 }
 
+.primerCard{
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 500px;
+    background-image: url(../img/primercard.jpg);
+    border-radius: 20px;
+}
+
+.imgCard1 {
+    height: 500px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+
+
 @media (max-width: 768px) {
     .body{
         grid-template-columns: repeat(2, 1fr);
