@@ -1,0 +1,53 @@
+@media screen and (max-width:576px){
+    .body{
+        width: 100vh;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+        background: black
+    }
+    .header {
+        height: 10vh;
+        display: grid;
+        grid-area: "header";
+        background-color: #d9d9d9;
+    }
+
+    }
+    .main{
+        height: 80vh;
+        display: grid;
+        grid-area: main;
+        background-color: #797a78;
+    }
+    
+    .mainUsuario{
+        grid-area: "main";
+        background-color: #797a78;
+    }
+    .cuadrado{
+        background-color: #d9d9d9;
+    }
+    .rectangulo{
+        background-color: black;
+        color: #d9d9d9;
+        opacity: none;
+        display: flex;
+        align-items: center;
+        display: flex;
+        align-items: center;
+    }
+    .titleForm a{
+        color: blue;
+    }
+    .footer{
+        height: 10vh;
+        display: grid;
+        grid-area: "footer";
+        background-color: #d9d9d9;
+    }

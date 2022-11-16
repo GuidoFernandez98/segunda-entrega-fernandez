@@ -1,0 +1,44 @@
+@media screen and (max-width: 768px) {
+    .body{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "main main"
+        "footer footer";
+        background-color: none;
+    }
+        .header{
+            background-color: #d9d9d9;
+            grid-area: "header";
+    }
+        .main{
+            background-color: #797a78;
+            grid-area: "main";
+            display: flex;
+            align-items: center;
+    }
+        .mainUsuario{
+            grid-area: "main";
+            background-color: #797a78;
+        }
+        .cuadrado{
+            background-color: #d9d9d9;
+    }
+        .rectangle{
+            background-color: black;
+            color: #d9d9d9;
+            opacity: none;
+            display: flex;
+            align-items: center;
+    }
+        .titleForm a{
+            color: blue;
+        }
+        .footer{
+            background-color: #d9d9d9;
+            grid-area: "footer";
+    }
+    
+}

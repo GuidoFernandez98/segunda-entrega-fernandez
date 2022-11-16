@@ -1,0 +1,51 @@
+.primerCard{
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 500px;
+    background-image: url(../img/primercard.jpg);
+    border-radius: 20px;
+}
+
+.imgCard1 {
+    height: 500px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+.segundCard {
+    display: flex;
+    justify-content: end;
+    width: 250px;
+    height: 500px;
+    background-image: url(../img/segundcard.jpg);
+    border-radius: 20px;
+}
+
+.imgCard2 {
+    height: 500px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+.tercerCard {
+    display: flex;
+    justify-content: start;
+    width: 250px;
+    height: 500px;
+    background-image: url(../img/tercercard.jpg);
+    border-radius: 20px;
+}
+
+.imgCard3 {
+    height: 500px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+.pieFoto {
+    font-size: large;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: red;
+}
